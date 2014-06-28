@@ -5,7 +5,8 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/data.csv "0.1.2"]
-                 [incanter/incanter "1.5.5"]]
+                 [incanter/incanter "1.5.5"]
+                 [net.mikera/core.matrix "0.26.0"]]
 
   :main ^:skip-aot wine-quality-clojure.core
   :target-path "target/%s"

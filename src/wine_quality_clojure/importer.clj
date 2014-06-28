@@ -10,3 +10,4 @@
 
 (defn csv-to-hash-map [parsed-csv]
   (map #(zipmap (first parsed-csv) %) (rest parsed-csv)))
+
