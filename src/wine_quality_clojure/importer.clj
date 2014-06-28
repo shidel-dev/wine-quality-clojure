@@ -3,9 +3,8 @@
 (require '[clojure.data.csv :as csv]
          '[clojure.java.io :as io])
 
-
 (defn read-file [file]
-(with-open [in-file (io/reader "./resources/winequality-red.csv")]
+(with-open [in-file (io/reader file)]
   (doall
     (csv/read-csv in-file :separator \;))))
 
